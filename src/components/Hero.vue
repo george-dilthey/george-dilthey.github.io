@@ -2,17 +2,21 @@
     <div class="d-flex align-items-center min-vh-100 hero">
         <div class="container-fluid">
             <div class="row hero-row d-flex">
-                <div class="col hero-greeting-col d-flex align-items-center">
-                    <div class="nav-text">
-                        <HeroNav/>
+                <div class="col hero-left d-flex align-items-center">
+                    <div class="w-100">
+                        <HeroNav v-if="$route.name!='Home'"/>
+                        <h1 v-else>Hey, I'm George.</h1>
                     </div>
                 </div>
-                <div class="col hero-nav d-flex align-items-center">
-                    <transition name="fade" mode="out-in">
-                        <h3 key="dev" v-if="$route.name=='Developer'">I graduated the Flatiron Software Engineering Bootcamp in 2021 and have been developing ever since. With a strong background in web analytics, I’ve always got the end user in mind.</h3>
-                        <h3 key="mar" v-else-if="$route.name=='Marketer'">With almost a decade of experience, I’ve learned the ins and outs of technical marketing. I can help with anything from pixel deployment to custom analytics solutions.</h3>
-                        <h3 key="cel" v-else-if="$route.name=='Cellist'">I’ve played the cello for over 20 years. Its my passion and has helped shape my whole life. I’m currently performing with the Greenwich Village Orchestra.</h3>
-                    </transition>
+                <div class="col d-flex hero-right align-items-center">
+                    <HeroNav v-if="$route.name=='Home'"/>
+                    <div v-else>
+                        <transition name="fade" mode="out-in">
+                            <h3 key="dev" v-if="$route.name=='Developer'">I graduated the Flatiron Software Engineering Bootcamp in 2021 and have been developing ever since. With a strong background in web analytics, I’ve always got the end user in mind.</h3>
+                            <h3 key="mar" v-else-if="$route.name=='Marketer'">With almost a decade of experience, I’ve learned the ins and outs of technical marketing. I can help with anything from pixel deployment to custom analytics solutions.</h3>
+                            <h3 key="cel" v-else-if="$route.name=='Cellist'">I’ve played the cello for over 20 years. Its my passion and has helped shape my whole life. I’m currently performing with the Greenwich Village Orchestra.</h3>
+                        </transition>
+                     </div>
                 </div>
             </div>
         </div>
@@ -40,12 +44,18 @@ export default {
     height: 30em;
 }
 
-.hero-greeting-col {
+.hero-left {
     border-right: 1px solid #AEC6CF;
 }
 
-.greeting-text{
+.hero-left .nav-text{
+    float: right;
     margin-right: 3em;
+
+}
+
+.hero-right .nav-text{
+    margin-left: 3em;
 }
 
 h1 {

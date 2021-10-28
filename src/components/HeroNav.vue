@@ -22,9 +22,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.nav-text{
-    margin-left: 3em;
-}
 
 h2 a {
     font-family: 'Roboto', sans-serif;
@@ -43,6 +40,10 @@ h2 a:hover {
 
 h2 a.router-link-active {
     color: #CFAEB5;
+}
+
+ul{
+  padding-left: 0;
 }
 
 </style>
