@@ -28,22 +28,21 @@ export default {
 
 h2 a {
     font-family: 'Roboto', sans-serif;
-    color: #ffffff;
     font-size: 4rem;
+    color: #ffffff;
     padding: 0px;
     margin: 0px;
     line-height: 1;
     text-decoration: none;
+    font-weight: 700;
 }
 
 h2 a:hover {
     color: #aec6cf !important;
-
 }
 
-h2 .router-link-active {
-    color: #ffffff;
-
+h2 a.router-link-active {
+    color: #CFAEB5;
 }
 
 </style>
