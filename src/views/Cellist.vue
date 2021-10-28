@@ -9,7 +9,7 @@
 import Hero from '@/components/Hero.vue'
 
 export default {
-  name: 'Developer',
+  name: 'Cellist',
   components: {
     Hero
   }

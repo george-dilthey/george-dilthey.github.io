@@ -8,11 +8,7 @@
                     </div>
                 </div>
                 <div class="col hero-nav d-flex align-items-center">
-                    <div class="nav-text">
-                        <h2><router-link to="/developer">DEVELOPER</router-link></h2>
-                        <h2><a href="#">MARKETER</a></h2>
-                        <h2><a href="#">CELLIST</a></h2>
-                    </div>
+                    <HeroNav />
                 </div>
             </div>
         </div>
@@ -20,8 +16,13 @@
 </template>
 
 <script>
+import HeroNav from '@/components/HeroNav.vue'
+
 export default {
-  name: 'HomeHero'
+  name: 'HomeHero',
+  components: {
+    HeroNav
+  }
 }
 </script>
 
@@ -55,21 +56,6 @@ h1 {
     font-size: 4rem !important;
     font-weight: 100 !important;
     text-align: right;
-}
-
-h2 a {
-    font-family: 'Roboto', sans-serif;
-    color: #ffffff;
-    font-size: 4rem;
-    padding: 0px;
-    margin: 0px;
-    line-height: 1;
-    text-decoration: none;
-}
-
-h2 a:hover {
-    color: #aec6cf !important;
-
 }
 
 </style>

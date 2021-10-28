@@ -4,9 +4,7 @@
             <div class="row hero-row d-flex">
                 <div class="col hero-greeting-col d-flex align-items-center">
                     <div class="nav-text">
-                        <h2><router-link to="/developer">DEVELOPER</router-link></h2>
-                        <h2><a href="#">MARKETER</a></h2>
-                        <h2><a href="#">CELLIST</a></h2>
+                        <HeroNav/>
                     </div>
                 </div>
                 <div class="col hero-nav d-flex align-items-center">
@@ -17,8 +15,11 @@
 </template>
 
 <script>
+import HeroNav from '@/components/HeroNav.vue'
+
 export default {
-  name: 'DeveloperHero'
+  name: 'Hero',
+  components: { HeroNav }
 }
 </script>
 
@@ -39,10 +40,6 @@ export default {
 
 .hero-greeting-col {
     border-right: 1px solid #AEC6CF;
-}
-
-.nav-text{
-    margin-left: 3em;
 }
 
 .greeting-text{
