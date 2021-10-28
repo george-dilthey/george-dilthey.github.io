@@ -2,7 +2,7 @@
   <div id="nav">
       <NavBar />
   </div>
-      <router-view />
+      <router-view/>
 </template>
 
 <script>
@@ -19,6 +19,7 @@ export default {
 <style>
 #app {
   font-family: 'Roboto', sans-serif;
+  background: #24292E;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

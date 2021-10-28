@@ -23,6 +23,8 @@ export default {
   background-color: #202020;
   margin-bottom: 0;
   height: 30px;
+  width: 100%;
+  position: absolute;
 }
 
 ul{
