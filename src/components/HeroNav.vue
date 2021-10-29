@@ -1,6 +1,6 @@
 <template>
   <div class="nav-text">
-    <ul>
+    <ul :class="{left: CheckRoutePath($route.name)}">
       <li>
         <h2><router-link to="/developer">DEVELOPER</router-link></h2>
       </li>
@@ -16,12 +16,30 @@
 
 <script>
 export default {
-  name: 'HeroNav'
+  name: 'HeroNav',
+  methods: {
+    CheckRoutePath: function (p) {
+      return (p.match('Developer|Marketer|Cellist'))
+    }
+  }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+ul {
+    margin-left: 3vw;
+    margin-bottom: 0;
+    position: relative;
+    transition: all 1s ease;
+    right: 0;
+}
+
+ul.left {
+    margin-left: 0vw;
+    right: 125%;
+}
 
 h2 a {
     font-family: 'Roboto', sans-serif;
