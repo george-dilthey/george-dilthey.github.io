@@ -38,7 +38,7 @@ ul {
 
 ul.left {
     margin-left: 0vw;
-    right: 125%;
+    transform: translate(-125%);
 }
 
 h2 a {
