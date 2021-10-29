@@ -1,6 +1,6 @@
 <template>
   <div class="nav-text">
-    <ul :class="{left: CheckRoutePath($route.name)}">
+    <ul :class="{left: CheckRouteName($route.name)}">
       <li>
         <h2><router-link to="/developer">DEVELOPER</router-link></h2>
       </li>
@@ -18,7 +18,7 @@
 export default {
   name: 'HeroNav',
   methods: {
-    CheckRoutePath: function (p) {
+    CheckRouteName: function (p) {
       return (p.match('Developer|Marketer|Cellist'))
     }
   }
@@ -50,9 +50,10 @@ h2 a {
     line-height: 1;
     text-decoration: none;
     font-weight: 700;
+    transition: color .5s ease;
 }
 
-h2 a:hover {
+a:hover {
     color: #aec6cf !important;
 }
 
