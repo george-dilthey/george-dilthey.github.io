@@ -3,7 +3,7 @@
     <nav class="navbar navbar-expand" id="navbar">
         <ul class="navbar-nav">
             <li class="nav-item active"><router-link class = "nav-link" to="/">HOME</router-link></li>
-            <li class="nav-item"><a class="nav-link" href="#about">ABOUT</a></li>
+            <li class="nav-item"><router-link class = "nav-link" to="/about">ABOUT</router-link></li>
             <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
         </ul>
     </nav>

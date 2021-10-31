@@ -3,6 +3,7 @@ import Home from '../views/Home.vue'
 import Developer from '../views/Developer.vue'
 import Marketer from '../views/Marketer.vue'
 import Cellist from '../views/Cellist.vue'
+import About from '../views/About.vue'
 
 import store from '@/store/store.js'
 
@@ -26,6 +27,11 @@ const routes = [
     path: '/cellist',
     name: 'Cellist',
     component: Cellist
+  },
+  {
+    path: '/about',
+    name: 'About',
+    component: About
   }
 ]
 

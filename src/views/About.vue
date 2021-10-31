@@ -1,6 +1,6 @@
 <template>
-  <div class="home">
-
+  <div class="about">
+    <h1>About</h1>
   </div>
 </template>
 
@@ -13,3 +13,11 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+
+h1 {
+  color: #ffffff
+}
+
+</style>
