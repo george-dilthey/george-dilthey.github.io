@@ -1,5 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
+import Developer from '../views/Developer.vue'
+import Marketer from '../views/Marketer.vue'
+import Cellist from '../views/Cellist.vue'
+
 import store from '@/store/store.js'
 
 const routes = [
@@ -11,17 +15,17 @@ const routes = [
   {
     path: '/developer',
     name: 'Developer',
-    component: Home
+    component: Developer
   },
   {
     path: '/marketer',
     name: 'Marketer',
-    component: Home
+    component: Marketer
   },
   {
     path: '/cellist',
     name: 'Cellist',
-    component: Home
+    component: Cellist
   }
 ]
 

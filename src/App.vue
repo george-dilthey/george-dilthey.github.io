@@ -1,8 +1,8 @@
 <template>
-  <div id="nav">
+  <div id="top">
       <NavBar />
-      <router-view><Hero/></router-view>
-
+      <Hero/>
+      <router-view/>
   </div>
 </template>
 

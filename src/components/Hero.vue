@@ -1,5 +1,5 @@
 <template>
-    <div class="d-flex align-items-center min-vh-100 hero">
+    <div id="hero" class="d-flex align-items-center hero">
         <HeroLine :key="$route.name"/>
         <div class="container-fluid">
             <div class="row d-flex">
@@ -46,11 +46,11 @@ export default {
 
 .hero {
     background: #24292E;
-    height: 100%;
+    height: 100vh;
 }
 
 .row {
-    height: 50vh;
+    height: 50%;
 }
 
 .short-desc{

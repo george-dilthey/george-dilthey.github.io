@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id='nav'>
     <nav class="navbar navbar-expand" id="navbar">
         <ul class="navbar-nav">
             <li class="nav-item active"><router-link class = "nav-link" to="/">HOME</router-link></li>
