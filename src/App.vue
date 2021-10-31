@@ -1,5 +1,5 @@
 <template>
-  <div id="top">
+  <div>
       <NavBar />
       <Hero/>
       <transition appear name="slide-up" mode="out-in">
