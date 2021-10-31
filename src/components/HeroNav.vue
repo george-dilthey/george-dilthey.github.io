@@ -1,6 +1,6 @@
 <template>
   <div class="nav-text">
-    <ul :class="{left: CheckRouteName($route.name)}">
+    <ul :class="{left: CheckRouteName($route.name, '[Developer, Marketer, Cellist]')}">
       <li>
         <h2><router-link to="/developer">DEVELOPER</router-link></h2>
       </li>
@@ -15,11 +15,12 @@
 </template>
 
 <script>
+
 export default {
   name: 'HeroNav',
   methods: {
-    CheckRouteName: function (p) {
-      return (p.match('Developer|Marketer|Cellist'))
+    CheckRouteName: function (p, a) {
+      return (a.includes(p))
     }
   }
 }

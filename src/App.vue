@@ -1,17 +1,20 @@
 <template>
   <div id="nav">
       <NavBar />
+      <router-view><Hero/></router-view>
+
   </div>
-      <router-view/>
 </template>
 
 <script>
 import NavBar from '@/components/NavBar.vue'
+import Hero from '@/components/Hero.vue'
 
 export default {
   name: 'App',
   components: {
-    NavBar
+    NavBar,
+    Hero
   }
 }
 </script>

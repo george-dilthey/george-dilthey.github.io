@@ -33,6 +33,7 @@ const router = createRouter({
 router.beforeEach((to, from, next) => {
   store.commit('SET_ROUTE', to)
   next()
+  return false
 })
 
 export default router

@@ -1,6 +1,6 @@
 <template>
     <div class="d-flex align-items-center min-vh-100 hero">
-        <HeroLine :key="$route.fullPath"/>
+        <HeroLine :key="$route.name"/>
         <div class="container-fluid">
             <div class="row d-flex">
                 <div class="col d-flex align-items-center hero-left">
@@ -34,6 +34,7 @@ export default {
   components: { HeroNav, HeroLine },
   methods: {
     CheckRouteName: function (p, a) {
+      console.log(this.$data.routeName)
       return (a.includes(p))
     }
   }
