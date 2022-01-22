@@ -3,7 +3,7 @@
       <ul class="top-nav">
           <li class="top-nav-item active"><router-link class = "top-nav-link" to="/">HOME</router-link></li>
           <li class="top-nav-item"><router-link class = "top-nav-link" to="/about">ABOUT</router-link></li>
-          <li class="top-nav-item"><a class="top-nav-link" href="#contact">CONTACT</a></li>
+          <li class="top-nav-item"><router-link class = "top-nav-link" to="/contact">CONTACT</router-link></li>
       </ul>
   </nav>
 </template>

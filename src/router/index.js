@@ -4,6 +4,7 @@ import Developer from '../views/Developer.vue'
 import Marketer from '../views/Marketer.vue'
 import Cellist from '../views/Cellist.vue'
 import About from '../views/About.vue'
+import Contact from '../views/Contact.vue'
 
 import store from '@/store/store.js'
 
@@ -32,6 +33,11 @@ const routes = [
     path: '/about',
     name: 'About',
     component: About
+  },
+  {
+    path: '/contact',
+    name: 'Contact',
+    component: Contact
   }
 ]
 
