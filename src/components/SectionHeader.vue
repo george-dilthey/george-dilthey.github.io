@@ -18,19 +18,19 @@ export default {
 .right {
   display: flex;
   flex-direction: row-reverse;
-  margin-right: 10vh;
+  margin-right: 8vw;
 }
 
 .left {
   display: flex;
-  margin-left: 10vh;
+  margin-left: 8vw;
 }
 
 h1 {
-  font-size: 8vw;
+  font-size: 12vw;
   font-weight: bold;
   color: #ffffff;
-  margin-top: -3.7%
+  margin-top: -5.3vw
 
 }
 
