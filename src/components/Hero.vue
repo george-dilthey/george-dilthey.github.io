@@ -1,17 +1,22 @@
 <template>
     <div id="hero" class="d-flex align-items-center hero">
         <HeroLine :key="$route.name"/>
-        <div class="container-fluid">
-            <div class="row d-flex">
-                <div class="col d-flex align-items-center hero-left">
+        <div class="container">
+            <div class="row">
+                <div class="col d-flex align-items-center">
                     <div class="w-100">
                         <transition appear name="fade" mode="out-in" >
                             <h1 v-if="CheckRouteName($route.name, `Home`)">Hey, I'm George.</h1>
                         </transition>
                     </div>
                 </div>
+                <div class=" show-mobile">
+                    <HeroNav  />
+                </div>
                 <div class="col d-flex align-items-center">
-                    <HeroNav />
+                    <div class=" hide-mobile">
+                        <HeroNav  />
+                    </div>
                     <div class="short-desc">
                         <transition appear name="fade" mode="out-in">
                             <h3 v-if="CheckRouteName($route.name, `Developer`)">I graduated the Flatiron Software Engineering Bootcamp in 2021 and have been developing ever since. With a strong background in web analytics, I’ve always got the end user in mind.</h3>
@@ -53,9 +58,9 @@ export default {
     height: 50%;
 }
 
-.short-desc{
-    width: 75%;
+.short-desc {
     position: absolute;
+    max-width: 100%;
 }
 
 h1 {
@@ -64,10 +69,12 @@ h1 {
     font-size: 4rem !important;
     font-weight: 100 !important;
     text-align: right;
+    padding-right: 10px;
 }
 
 h3 {
     color: #ffffff;
+    padding-left: 10px;
 }
 
 .fade-enter-active,
@@ -78,6 +85,29 @@ h3 {
 .fade-enter-from,
 .fade-leave-to {
     opacity: 0;
+}
+
+/* mobile */
+@media only screen and (max-device-width: 766px) {
+    h1 {
+        margin-top: -15vh;
+        text-align: center;
+        padding-right: 0px;
+    }
+
+    .short-desc {
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    h3{
+        padding-left: 0px;
+    }
+}
+
+/* desktop */
+@media only screen and (min-device-width: 767px) {
+
 }
 
 </style>

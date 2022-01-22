@@ -40,4 +40,22 @@ export default {
   opacity: 0;
 }
 
+@media only screen and (max-device-width: 766px) {
+      .show-mobile {
+        display: block;
+      }
+      .hide-mobile {
+        display: none;
+      }
+    }
+
+ @media only screen and (min-device-width: 767px) {
+      .show-mobile {
+        display: none;
+      }
+      .hide-mobile {
+        display: block;
+      }
+    }
+
 </style>
