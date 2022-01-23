@@ -92,7 +92,6 @@ h3 {
         margin-top: -30vh;
         text-align: center;
         padding-right: 0px;
-        position: absolute;
     }
 
     .short-desc {
