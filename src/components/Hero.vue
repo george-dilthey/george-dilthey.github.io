@@ -3,20 +3,15 @@
         <HeroLine :key="$route.name"/>
         <div class="container">
             <div class="row">
-                <div class="col d-flex align-items-center intro">
-                    <div class="w-100">
+                <div class="col-md d-flex align-items-center justify-content-center">
+                    <div class ="intro">
                         <transition appear name="fade" mode="out-in" >
                             <h1 v-if="CheckRouteName($route.name, `Home`)">Hey, I'm George.</h1>
                         </transition>
                     </div>
+                    <HeroNav />
                 </div>
-                <div class=" show-mobile">
-                    <HeroNav  />
-                </div>
-                <div class="col d-flex align-items-center">
-                    <div class=" hide-mobile">
-                        <HeroNav  />
-                    </div>
+                <div class="col-md d-flex align-items-center">
                     <div class="short-desc">
                         <transition appear name="fade" mode="out-in">
                             <h3 v-if="CheckRouteName($route.name, `Developer`)">I graduated the Flatiron Software Engineering Bootcamp in 2021 and have been developing ever since. With a strong background in web analytics, I’ve always got the end user in mind.</h3>
@@ -59,7 +54,8 @@ export default {
 }
 
 .short-desc {
-    max-width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 h1 {
@@ -86,19 +82,17 @@ h3 {
 }
 
 /* mobile */
-@media only screen and (max-width: 766px) {
+@media only screen and (max-width: 767px) {
     h1 {
         text-align: center;
     }
-
     .intro {
-        margin-top: -55%;
+        margin-top: -40vh;
     }
 
     .short-desc {
+        margin-top: 15vh;
         text-align: center;
-        padding-left: 10px;
-        padding-right: 10px;
     }
     h3{
         padding-left: 0px;
@@ -106,11 +100,13 @@ h3 {
 }
 
 /* desktop */
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 768px) {
     .short-desc {
         position: absolute;
     }
-
+    h1 {
+        text-align: right;
+    }
 }
 
 </style>
