@@ -40,7 +40,7 @@ export default {
   opacity: 0;
 }
 
-@media only screen and (max-device-width: 766px) {
+@media only screen and (max-width: 766px) {
       .show-mobile {
         display: block;
       }
@@ -49,7 +49,7 @@ export default {
       }
     }
 
- @media only screen and (min-device-width: 767px) {
+ @media only screen and (min-width: 767px) {
       .show-mobile {
         display: none;
       }

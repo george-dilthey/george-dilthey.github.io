@@ -59,7 +59,6 @@ export default {
 }
 
 .short-desc {
-    position: absolute;
     max-width: 100%;
 }
 
@@ -88,11 +87,12 @@ h3 {
 }
 
 /* mobile */
-@media only screen and (max-device-width: 766px) {
+@media only screen and (max-width: 766px) {
     h1 {
-        margin-top: -15vh;
+        margin-top: -30vh;
         text-align: center;
         padding-right: 0px;
+        position: absolute;
     }
 
     .short-desc {
@@ -106,7 +106,10 @@ h3 {
 }
 
 /* desktop */
-@media only screen and (min-device-width: 767px) {
+@media only screen and (min-width: 767px) {
+    .short-desc {
+        position: absolute;
+    }
 
 }
 

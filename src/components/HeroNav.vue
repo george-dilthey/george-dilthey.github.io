@@ -51,7 +51,7 @@ ul{
 }
 
 /* mobile */
-@media only screen and (max-device-width: 766px) {
+@media only screen and (max-width: 766px) {
   ul {
     margin-bottom: -20vh;
     margin-top: 10vh;
@@ -67,7 +67,7 @@ ul{
 }
 
 /* desktop */
-@media only screen and (min-device-width: 767px) {
+@media only screen and (min-width: 767px) {
   ul {
     margin-left: 3vw;
     margin-bottom: 0;

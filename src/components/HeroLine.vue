@@ -12,11 +12,12 @@ export default {
 <style scoped>
 
 /* mobile */
-@media only screen and (max-device-width: 766px) {
+@media only screen and (max-width: 766px) {
   .line {
     position: absolute;
     width: 75%;
     margin-left: 12.5%;
+    margin-top: -15vh;
     border-bottom: 1px solid #AEC6CF;
     animation: line-anim 2s
   }
@@ -30,7 +31,7 @@ export default {
 }
 
 /* desktop */
-@media only screen and (min-device-width: 767px) {
+@media only screen and (min-width: 767px) {
   .line {
     position: absolute;
     width: 50%;
