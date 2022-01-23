@@ -30,7 +30,7 @@ export default {
 <style scoped>
 h2 a {
     font-family: 'Roboto', sans-serif;
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: #ffffff;
     line-height: 1;
     text-decoration: none;
@@ -53,15 +53,14 @@ ul{
 /* mobile */
 @media only screen and (max-width: 766px) {
   ul {
-    margin-bottom: -20vh;
-    margin-top: 10vh;
+    margin-bottom: -35%;
+    margin-top: 15%;
     transition: all 1s ease;
     text-align: center;
   }
   ul.left {
-    margin-left: 0;
-    margin-top: 0vh;
-    margin-bottom: 0vh;
+    margin-top: -15%;
+    margin-bottom: 5%;
     transform: translateY(-60%);
   }
 }

@@ -3,7 +3,7 @@
         <HeroLine :key="$route.name"/>
         <div class="container">
             <div class="row">
-                <div class="col d-flex align-items-center">
+                <div class="col d-flex align-items-center intro">
                     <div class="w-100">
                         <transition appear name="fade" mode="out-in" >
                             <h1 v-if="CheckRouteName($route.name, `Home`)">Hey, I'm George.</h1>
@@ -88,8 +88,11 @@ h3 {
 /* mobile */
 @media only screen and (max-width: 766px) {
     h1 {
-        margin-top: -30vh;
         text-align: center;
+    }
+
+    .intro {
+        margin-top: -55%;
     }
 
     .short-desc {
