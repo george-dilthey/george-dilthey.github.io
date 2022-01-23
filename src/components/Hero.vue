@@ -68,7 +68,6 @@ h1 {
     font-size: 4rem !important;
     font-weight: 100 !important;
     text-align: right;
-    padding-right: 10px;
 }
 
 h3 {
@@ -91,7 +90,6 @@ h3 {
     h1 {
         margin-top: -30vh;
         text-align: center;
-        padding-right: 0px;
     }
 
     .short-desc {

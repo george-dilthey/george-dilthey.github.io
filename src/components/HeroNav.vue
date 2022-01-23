@@ -69,14 +69,9 @@ ul{
 /* desktop */
 @media only screen and (min-width: 767px) {
   ul {
-    margin-left: 3vw;
-    margin-bottom: 0;
-    position: relative;
     transition: all 1s ease;
-    right: 0;
   }
   ul.left {
-    margin-left: 0vw;
     transform: translate(-125%);
   }
 }
