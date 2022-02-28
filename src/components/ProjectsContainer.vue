@@ -1,17 +1,20 @@
 <template>
   <section id="projects">
     <SectionHeader side='right' text='PROJECTS'/>
+    <ProjectsCarousel />
   </section>
 </template>
 
 <script>
 
 import SectionHeader from '@/components/SectionHeader.vue'
+import ProjectsCarousel from '@/components/ProjectsCarousel.vue'
 
 export default {
   name: 'ProjectsContainer',
   components: {
-    SectionHeader
+    SectionHeader,
+    ProjectsCarousel
   }
 }
 </script>
