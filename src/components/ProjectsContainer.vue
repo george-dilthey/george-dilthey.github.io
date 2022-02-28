@@ -1,7 +1,7 @@
 <template>
-    <section id="projects">
-      <SectionHeader side='right' text='PROJECTS'/>
-    </section>
+  <section id="projects">
+    <SectionHeader side='right' text='PROJECTS'/>
+  </section>
 </template>
 
 <script>

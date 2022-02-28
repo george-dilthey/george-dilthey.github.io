@@ -75,7 +75,7 @@ ul {
     transform: translate(40vw);
   }
   ul.intro {
-    transform: translate(0vw);
+    transform: translate(5vw);
   }
 }
 

@@ -1,10 +1,12 @@
 <template>
   <div>
-      <NavBar />
-      <Hero/>
+    <NavBar />
+    <Hero/>
+    <router-view v-slot="{ Component, route }">
       <transition appear name="slide-up" mode="out-in">
-        <router-view :key='$route.path'></router-view>
+        <component :is="Component" :key="route.path" />
       </transition>
+    </router-view>
   </div>
 </template>
 

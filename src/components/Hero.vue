@@ -3,7 +3,7 @@
         <HeroLine :key="$route.name"/>
         <div class="container">
             <div class="row">
-                <div class="col-md d-flex align-items-center justify-content-center">
+                <div class="col-md d-flex align-items-center justify-content-center justify-content-xl-start">
                     <div class ="intro">
                         <transition appear name="fade" mode="out-in" >
                             <h1 v-if="CheckRouteName($route.name, `Home`)">Hey, I'm George.</h1>
@@ -34,7 +34,6 @@ export default {
   components: { HeroNav, HeroLine },
   methods: {
     CheckRouteName: function (p, a) {
-      console.log(this.$data.routeName)
       return (a.includes(p))
     }
   }
