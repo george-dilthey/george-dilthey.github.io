@@ -1,7 +1,8 @@
 [
   {
     "name": "Congress Checker",
-    "link": "https://congresschecker.herokuapp.com/"
+    "link": "https://congresschecker.herokuapp.com/",
+    "image": "./images/congress_checker.png"
   },
   {
     "name": "Insights for YNAB",
