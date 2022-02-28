@@ -39,11 +39,11 @@ h2 a {
     line-height: 1;
     text-decoration: none;
     font-weight: 700;
-    transition: color .5s ease;
+    transition: background-color .5s ease;
 }
 
 a:hover {
-    color: #aec6cf !important;
+    background-color: #aec6cf !important;
 }
 
 h2 a.router-link-active {
@@ -72,7 +72,7 @@ ul {
   ul {
     top: 43vh;
     transition: all 1s ease;
-    transform: translate(40vw);
+    transform: translate(47vw);
   }
   ul.intro {
     transform: translate(5vw);
