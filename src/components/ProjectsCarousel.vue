@@ -67,6 +67,7 @@ ol {
 .carousel__prev,
 .carousel__next {
   box-sizing: content-box;
-  border: 5px solid white;
+  border: 2px solid white;
+  background-color: #24292E;
 }
 </style>

@@ -1,7 +1,6 @@
 [
   {
     "name": "Congress Checker",
-    "link": "https://congresschecker.herokuapp.com/",
     "image": "./images/congress_checker.png",
     "description": "Congress Checker is a full-stack Rails/React app that allows users to learn more about congress members and keep track of their latest activity by creating their own custom checklists.",
     "github": "https://github.com/george-dilthey/congress-checker-frontend",
@@ -9,6 +8,9 @@
   },
   {
     "name": "Insights for YNAB",
-    "link": ""
+    "image": "./images/insights_for_ynab.png",
+    "description": "Insights for YNAB is a custom Google Data Studio Connector that allows you to connect to your YNAB data. Create dashboards to keep track of your accounts, transactions, or categories.",
+    "github": "https://github.com/george-dilthey/insights-for-ynab",
+    "demo": "https://datastudio.google.com/u/0/datasources/create?connectorId=AKfycbyexS2r_aeNSAA--7lEF3iaV_sjjQMgfTwMnuaLYVj-Io-63jdGoCmuW2MvY4Gf7vIXOw"
   }
 ]

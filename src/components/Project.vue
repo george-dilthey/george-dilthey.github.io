@@ -8,7 +8,7 @@
       <p>{{description}}</p>
       <div class="buttons">
         <a target="_blank" :href="github" class="button">Github</a>
-        <a target="_blank" :href="demo" class="button">Demo</a>
+        <a v-if="demo" target="_blank" :href="demo" class="button">Demo</a>
       </div>
     </div>
   </div>
@@ -20,7 +20,7 @@ export default {
   name: 'Project',
   components: {
   },
-  props: ['name', 'link', 'image', 'description', 'github', 'demo']
+  props: ['name', 'image', 'description', 'github', 'demo']
 }
 </script>
 
