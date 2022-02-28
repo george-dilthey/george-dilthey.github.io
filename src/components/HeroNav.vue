@@ -37,13 +37,14 @@ h2 a {
     font-size: 3.5rem;
     color: #ffffff;
     line-height: 1;
-    text-decoration: none;
+    text-decoration: underline overline 3px rgba(255, 255, 255, 0);
+    text-underline-offset: 8px;
     font-weight: 700;
-    transition: background-color .5s ease;
+    transition: text-decoration-color 2s ease;
 }
 
 a:hover {
-    background-color: #aec6cf !important;
+  text-decoration-color: rgba(255, 255, 255, 1);
 }
 
 h2 a.router-link-active {
