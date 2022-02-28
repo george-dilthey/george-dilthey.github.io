@@ -1,7 +1,9 @@
 <template>
   <Carousel>
     <Slide v-for="project in projects" :key="project">
-      <div class="carousel__item">{{ project.name }}</div>
+      <div class="carousel__item">
+        <Project v-bind='project' />
+      </div>
     </Slide>
 
     <template #addons>
@@ -14,26 +16,20 @@
 <script>
 import { Carousel, Navigation, Pagination, Slide } from 'vue3-carousel'
 import 'vue3-carousel/dist/carousel.css'
+import Project from '@/components/Project.vue'
+import projectData from '@/assets/data/project-data.json'
 
 export default ({
   name: 'ProjectCarousel',
   components: {
+    Project,
     Carousel,
     Slide,
     Pagination,
     Navigation
   },
   data: () => ({
-    projects: [
-      {
-        name: 'Congress Checker',
-        link: 'https://congresschecker.herokuapp.com/'
-      },
-      {
-        name: 'Insights for YNAB',
-        link: ''
-      }
-    ]
+    projects: projectData
   })
 })
 </script>

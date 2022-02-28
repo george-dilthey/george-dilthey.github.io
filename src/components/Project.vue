@@ -1,6 +1,6 @@
 <template>
   <div>
-    Hello Project 1
+    {{name}}
   </div>
 </template>
 
@@ -9,7 +9,8 @@
 export default {
   name: 'Project',
   components: {
-  }
+  },
+  props: ['name', 'link']
 }
 </script>
 
