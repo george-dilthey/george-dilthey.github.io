@@ -1,30 +1,40 @@
 <template>
-    <Carousel>
-      <Slide v-for="slide in 10" :key="slide">
-        <div class="carousel__item">{{ slide }}</div>
-      </Slide>
+  <Carousel>
+    <Slide v-for="project in projects" :key="project">
+      <div class="carousel__item">{{ project.name }}</div>
+    </Slide>
 
-      <template #addons>
-        <Navigation />
-        <Pagination />
-      </template>
-    </Carousel>
+    <template #addons>
+      <Navigation />
+      <Pagination />
+    </template>
+  </Carousel>
 </template>
 
 <script>
 import { Carousel, Navigation, Pagination, Slide } from 'vue3-carousel'
 import 'vue3-carousel/dist/carousel.css'
-// import Project from '@/components/Project.vue'
 
 export default ({
   name: 'ProjectCarousel',
   components: {
-    // Project,
     Carousel,
     Slide,
     Pagination,
     Navigation
-  }
+  },
+  data: () => ({
+    projects: [
+      {
+        name: 'Congress Checker',
+        link: 'https://congresschecker.herokuapp.com/'
+      },
+      {
+        name: 'Insights for YNAB',
+        link: ''
+      }
+    ]
+  })
 })
 </script>
 
@@ -32,11 +42,20 @@ export default ({
 
 section.carousel {
   margin: auto;
-  width: 75%;
+  width: 90%;
+  height: 75vh;
+}
+
+.carousel__viewport {
+  height: 100%;
+}
+
+.carousel__track {
+  height: 100%;
 }
 
 .carousel__item {
-  min-height: 200px;
+  height: 100%;
   width: 100%;
   background-color: var(--vc-clr-primary);
   color:  var(--vc-clr-white);
@@ -49,6 +68,11 @@ section.carousel {
 
 .carousel__slide {
   padding: 10px;
+  height: 100%;
+}
+
+ol {
+  padding-left: 0px !important;
 }
 
 .carousel__prev,
