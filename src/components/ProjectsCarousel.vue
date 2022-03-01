@@ -8,13 +8,12 @@
 
     <template #addons>
       <Navigation />
-      <Pagination />
     </template>
   </Carousel>
 </template>
 
 <script>
-import { Carousel, Navigation, Pagination, Slide } from 'vue3-carousel'
+import { Carousel, Navigation, Slide } from 'vue3-carousel'
 import 'vue3-carousel/dist/carousel.css'
 import Project from '@/components/Project.vue'
 import projectData from '@/assets/data/project-data.json'
@@ -25,7 +24,6 @@ export default ({
     Project,
     Carousel,
     Slide,
-    Pagination,
     Navigation
   },
   data: () => ({

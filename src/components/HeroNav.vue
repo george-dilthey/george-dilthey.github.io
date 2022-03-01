@@ -36,15 +36,21 @@ h2 a {
     font-family: 'Roboto', sans-serif;
     font-size: 3.5rem;
     color: #ffffff;
+    text-decoration: none;
     line-height: 1;
-    text-decoration: underline overline 3px rgba(255, 255, 255, 0);
-    text-underline-offset: 8px;
+    border-top: solid 1px rgba(174, 198, 207, 0);
+    border-bottom: solid 1px rgba(174, 198, 207, 0);
     font-weight: 700;
-    transition: text-decoration-color 2s ease;
+    transition: none;
+
 }
 
 a:hover {
-  text-decoration-color: rgba(255, 255, 255, 1);
+  color: #AEC6CF;
+  border-top: solid 1px rgba(174, 198, 207, 1);
+  border-bottom: solid 1px rgba(174, 198, 207, 1);
+  transition: border-top .5s ease, border-bottom .5s ease, color .5s ease;
+
 }
 
 h2 a.router-link-active {

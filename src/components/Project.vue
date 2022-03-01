@@ -43,7 +43,8 @@ img {
 }
 
 div.project-text {
-  width: 100%;
+  width: 85%;
+  margin: auto;
   height: 50%;
   display: flex;
   flex-direction: column;
