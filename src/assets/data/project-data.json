@@ -2,7 +2,7 @@
   {
     "name": "Congress Checker",
     "image": "./images/congress_checker.png",
-    "description": "Congress Checker is a full-stack Rails/React app that allows users to learn more about congress members and keep track of their latest activity by creating their own custom checklists.",
+    "description": "Congress Checker is a fullstack Rails/React app that allows users to learn more about congress members and keep track of their latest activity by creating their own custom checklists.",
     "github": "https://github.com/george-dilthey/congress-checker-frontend",
     "demo": "https://congresschecker.herokuapp.com/"
   },
